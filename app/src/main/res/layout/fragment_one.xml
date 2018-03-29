@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#f00"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:id="@+id/ibt_edt"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_edit_bg"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_musicList"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/pb_loading"
+        android:indeterminateDrawable="@drawable/shape_progresss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_edt"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#ccc"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ibt_delete"
+            android:background="@drawable/selector_delete_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+       <ImageButton
+           android:id="@+id/ibt_send"
+           android:background="@drawable/selector_send_bg"
+           android:layout_marginLeft="40dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

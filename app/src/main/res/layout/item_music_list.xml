@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/selector_bg_list_item"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_music"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="65dp"
+        android:scaleType="fitXY"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginLeft="5dp"
+        android:text="title"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/iv_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_toRightOf="@+id/iv_music"
+        android:text="album"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cb_select"
+        android:visibility="invisible"
+        android:background="#ccc"
+        android:clickable="false"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:id="@+id/six_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="音乐"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="#f00"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:text="视频"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="#0f0"/>
+
+        <TextView
+            android:text="图片"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="#00f"/>
+
+        <TextView
+            android:text="其他"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="#0ff"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/pieView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_showSortList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/show_op_layout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="-40dp"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/ibt_delete_six"
+            android:background="@drawable/selector_delete_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ibt_exit_six"
+            android:background="@drawable/exit"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
